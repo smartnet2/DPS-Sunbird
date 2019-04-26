@@ -1414,7 +1414,7 @@ ul {
   list-style: none;
 }
 ul li {
-  margin-bottom: 29px;
+  margin-bottom: 0px;
   position: relative;
 }
 ul li span.text {

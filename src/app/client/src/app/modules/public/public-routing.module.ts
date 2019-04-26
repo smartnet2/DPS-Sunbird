@@ -8,7 +8,7 @@ import {
   PublicCollectionPlayerComponent
 } from './components';
 import { SignupGuard, LandingpageGuard } from './services';
-import { NuihComponent, LearnComponent, InnovateComponent, DataExchangeComponent, SmartGovComponent, AboutusComponent, ComingSoonComponent } from './module/nuih';
+import { DPSDashboardComponent } from './module/dps';
 
 const routes: Routes = [
   {
@@ -65,51 +65,9 @@ const routes: Routes = [
     path: ':slug/explore', loadChildren: './module/explore/explore.module#ExploreModule'
   },
   {
-    path: 'nuis', component: NuihComponent, data: {
+    path: 'dpsdashboard', component: DPSDashboardComponent, data: {
       telemetry: {
-        env: 'public', pageid: 'nuis', type: 'view', subtype: 'paginate'
-      }
-    }
-  },
-  {
-    path: 'lms', component: LearnComponent, data: {
-      telemetry: {
-        env: 'public', pageid: 'lms', type: 'view', subtype: 'paginate'
-      }
-    }
-  },
-  {
-    path: 'innovate', component: InnovateComponent, data: {
-      telemetry: {
-        env: 'public', pageid: 'innovate', type: 'view', subtype: 'paginate'
-      }
-    }
-  },
-  {
-    path: 'iudx', component: DataExchangeComponent, data: {
-      telemetry: {
-        env: 'public', pageid: 'iudx', type: 'view', subtype: 'paginate'
-      }
-    }
-  },
-  {
-    path: 'smartgov', component: SmartGovComponent, data: {
-      telemetry: {
-        env: 'public', pageid: 'smartgov', type: 'view', subtype: 'paginate'
-      }
-    }
-  },
-  {
-    path: 'aboutus', component: AboutusComponent, data: {
-      telemetry: {
-        env: 'public', pageid: 'aboutus', type: 'view', subtype: 'paginate'
-      }
-    }
-  },
-  {
-    path: 'comingsoon', component: ComingSoonComponent, data: {
-      telemetry: {
-        env: 'public', pageid: 'comingsoon', type: 'view', subtype: 'paginate'
+        env: 'public', pageid: 'dpsdashboard', type: 'view', subtype: 'paginate'
       }
     }
   }
