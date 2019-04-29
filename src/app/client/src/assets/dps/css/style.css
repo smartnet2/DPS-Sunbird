@@ -59,6 +59,26 @@ body a{
   border-left: 8px solid transparent;
   content: '';
 }
+@media(max-width: 440px) {
+  .banner-top4 {
+    height: 80vw;
+}
+}
+@media(max-width: 414px) {
+  .banner-top4 {
+    height: 90vw;
+}
+}
+@media(max-width: 384px) {
+  .banner-top4 {
+    height: 96vw;
+}
+}
+@media(max-width: 320px) {
+  .banner-top4 {
+    height: 114vw;
+}
+}
 .navbar .navbar-nav li .dropdown-menu li.dropdown-menu-header, .navbar .navbar-nav li .dropdown-menu li.dropdown-menu-footer {
   background:#f2f4f8;
 }
@@ -95,6 +115,19 @@ body a{
 .warning_11:hover, .warning_22:hover, .warning_33:hover, .warning_44:hover{
 	background-color: #246AA6 !important;
 	border-color:#246AA6 !important;
+}
+.banner-top4{
+  height: 20vw;
+}
+.banner-top4 {
+  background: url(../images/banner-new.jpg) no-repeat 0px 0px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+
+
 }
 .warning_2, .warning_22{
 	padding:6px 12px !important;
@@ -1451,7 +1484,7 @@ div.selector, div.selector span, div.checker span, div.radio span, div.uploader,
   background: #fff;
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
-  border: 1px solid #CDCDCD;
+  /* border: 1px solid #CDCDCD; */
 }
 div.checker, div.checker span, div.checker input {
   width: 19px;
@@ -1627,7 +1660,7 @@ i.icon_9{
   z-index: 1;
   width: 19px;
   height: 19px;
-  border: 1px solid #CDCDCD;
+  /* border: 1px solid #CDCDCD; */
 }
 .checkbox:after {
   content: "";
@@ -2185,6 +2218,11 @@ ul.new li.new_right{
 .radios label{
   margin-left: 15px;
 }
+@media(max-width: 600px) {
+  .banner-top4 {
+    height: 60vw;
+}
+}
  /*-- responsive design --*/
 @media (max-width:1366px){
 .col-xs-8.activity-desc {
@@ -2552,6 +2590,9 @@ form.navbar-form.navbar-right {
 }
 }
 @media (max-width:480px){
+  .banner-top4 {
+    height: 74vw;
+}
 .pagination {
   margin: 6px 0;
 }
@@ -2915,4 +2956,26 @@ i.fa.house {
         margin-left: auto;
     }
 }
+.banner-info_agile_w3ls h4{
+	color:#fff;
+	padding:8px;
+	
+}
 
+.banner-info_agile_w3ls h4 a {
+	color:#fff;
+	padding:5px;
+	background-color: transparent;
+    border: none;
+	    font-size: 22px;
+    font-weight: 600;
+}
+
+.banner-info_agile_w3ls h4 a:hover{
+	color:#e47501;
+	padding:5px;
+	background-color: transparent;
+    border: none;
+	    font-size: 22px;
+    font-weight: 600;
+}

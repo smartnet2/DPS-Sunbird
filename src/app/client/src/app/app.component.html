@@ -1,4 +1,28 @@
 <!-- #NUIH change: Hided the main header for nuih module -->
 <app-header *ngIf="showMainHeader"></app-header>
+<!-- banner -->
+<div class="slider" *ngIf="showMainHeader">
+    <div class="callbacks_container">
+        <ul class="rslides callbacks callbacks1" id="slider4" style="padding-left:0px;">
+            <li>
+                <div class="banner-top4">
+                    <div class="banner-info_agile_w3ls">
+                        <div class="container">
+                            <h4 style="margin:0px;margin-top:50px;"><p><b>Study yous subjects using animations, key points, quizzes, experiments, game etc</b></p></h4>
+                            
+                            <h4 style="margin:0px;"><p><b>Practice your concepts here</b></p></h4>
+                            
+                            <h4 style="margin:0px;"><p><b>Track your progress card and identify your weak areas</b></p></h4>
+                            <br><br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<!-- //banner -->
 <app-breadcrumbs *ngIf="userService.loggedIn"></app-breadcrumbs>
 <router-outlet *ngIf="initApp"></router-outlet>
